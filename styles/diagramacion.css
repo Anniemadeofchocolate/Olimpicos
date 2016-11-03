@@ -288,6 +288,8 @@ header
 	#rio3 {margin-left: 10px;
 		margin-top: 30px;}
 	#buscar {width: 100px;}
+	#divheader {background: pink;
+			width: 150px;}
 
 #navmobile {
 	margin-top: 15px;}
