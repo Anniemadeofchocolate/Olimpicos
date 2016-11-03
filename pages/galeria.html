@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html class="htmlpages">
+	<link rel="shortcut icon" href="../favicon.ico" />
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../styles/diagramacion.css">
+	<link rel="stylesheet" type="text/css" href="../styles/textos.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<head>
+	<title> Olimpicos Río 2016</title>
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+</head>
+<body class="page"onLoad="goforit()">
+	<header>
+			<a href="../index.html"><img id="rio" src="../images/rio2016.png"></a>
+
+		<script>
+		var dayarray=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday")
+		var montharray=new Array("January","February","March","April","May","June","July","August","September","October","November","December")
+
+		function getthedate(){
+			var mydate=new Date()
+			var year=mydate.getYear()
+			if (year < 1000)
+			year+=1900
+			var day=mydate.getDay()
+			var month=mydate.getMonth()
+			var daym=mydate.getDate()
+			if (daym<10)
+			daym="0"+daym
+			var hours=mydate.getHours()
+			var minutes=mydate.getMinutes()
+			var seconds=mydate.getSeconds()
+			var dn="AM"
+			if (hours>=12)
+			dn="PM"
+			if (hours>12){
+			hours=hours-12
+			}
+			if (hours==0)
+			hours=12
+			if (minutes<=9)
+			minutes="0"+minutes
+			if (seconds<=9)
+			seconds="0"+seconds
+			//change font size here
+			var cdate="<small><font color='ffffff' face='Arial'><b>"+dayarray[day]+", "+montharray[month]+" "+daym+", "+year+" "+hours+":"+minutes+":"+seconds+" "+dn
+			+"</b></font></small>"
+			if (document.all)
+			document.all.clock.innerHTML=cdate
+			else if (document.getElementById)
+			document.getElementById("clock").innerHTML=cdate
+			else
+			document.write(cdate)
+			}
+			if (!document.all&&!document.getElementById)
+			getthedate()
+			function goforit(){
+			if (document.all||document.getElementById)
+			setInterval("getthedate()",1000)
+			}
+
+			</script>
+			<span id="clock"></span>
+		<a href="#"> <img id="bar" href="#"  src="../images/searchbar.png"></a> </header>
+	<nav>
+		<ul>
+			<li> <a class="menu" href="../pages/noticias.html">Noticias</a></li>
+			<li> <a class="menu" href="../pages/especial.html">Especial</a></li>
+			<li> <a  class="menu" href="../pages/opinion.html">Opinión</a></li>
+			<li> <a class="menu" href="../pages/video.html">Video</a></li>
+			<li> <a class="sele" class="menu" href="#">Galería</a></li>
+		</ul>
+	</nav>
+
+<h1>GALERÍA</h1>
+<h2 class="titulos">SENDERISMO Y TREKKING COMO NUEVOS DEPORTES OLÍMPICOS</h2>
+
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/camino_con_direccin_al_salado.jpg" alt="Camino con dirección al Salado" title="Camino con dirección al Salado" id="wows1_0"/></li>
+		<li><img src="data1/images/camino_prehispnico_de_los_niquas.jpg" alt="Camino prehispánico de los Niquías" title="Camino prehispánico de los Niquías" id="wows1_1"/></li>
+		<li><img src="data1/images/camino_va_laguna_encantado.jpg" alt="Camino vía laguna encantado" title="Camino vía laguna encantado" id="wows1_2"/></li>
+		<li><img src="data1/images/cima_de_trekking_en_el_pramo_del_sol_urrao,_antioquia.jpg" alt="Cima de trekking en el Páramo del Sol (Urrao, Antioquia)" title="Cima de trekking en el Páramo del Sol (Urrao, Antioquia)" id="wows1_3"/></li>
+		<li><img src="data1/images/cima_morrn_vista_desde_el_oeste_copacabana__antioquia.jpg" alt="Cima Morrón vista desde el oeste (Copacabana - Antioquia)" title="Cima Morrón vista desde el oeste (Copacabana - Antioquia)" id="wows1_4"/></li>
+		<li><img src="data1/images/comienzo_senderismo_la_miel,_caldas.jpg" alt="Comienzo Senderismo (La Miel, Caldas)" title="Comienzo Senderismo (La Miel, Caldas)" id="wows1_5"/></li>
+		<li><img src="data1/images/deporte_y_diversin_en_envigado,_antioquia.jpg" alt="Deporte y diversión en Envigado, Antioquia" title="Deporte y diversión en Envigado, Antioquia" id="wows1_6"/></li>
+		<li><img src="data1/images/llegando_a_la_cascada_los_perdidos_envigado__antioquia.jpg" alt="Llegando a la cascada Los Perdidos (Envigado - Antioquia)" title="Llegando a la cascada Los Perdidos (Envigado - Antioquia)" id="wows1_7"/></li>
+		<li><img src="data1/images/logrando_la_cima_en_senderismo_al_cerro_morron_copacabana,_antioquia.jpg" alt="Logrando la cima en senderismo al cerro Morron (Copacabana, Antioquia)" title="Logrando la cima en senderismo al cerro Morron (Copacabana, Antioquia)" id="wows1_8"/></li>
+		<li><img src="data1/images/montaa_empinada_rionegro__antioquia.jpg" alt="Montaña empinada (Rionegro - Antioquia)" title="Montaña empinada (Rionegro - Antioquia)" id="wows1_9"/></li>
+		<li><img src="data1/images/senderismo_al_alto_de_san_miguel_caldas,_antioquia.jpg" alt="Senderismo al alto de San Miguel (Caldas, Antioquia)" title="Senderismo al alto de San Miguel (Caldas, Antioquia)" id="wows1_10"/></li>
+		<li><img src="data1/images/senderismo_hacia_las_cuevas_del_higuern_caldas,_antioquia.jpg" alt="Senderismo hacia las cuevas del Higuerón (Caldas, Antioquia)" title="Senderismo hacia las cuevas del Higuerón (Caldas, Antioquia)" id="wows1_11"/></li>
+		<li><img src="data1/images/sendero_va_al_retiro__antioquia.jpg" alt="Sendero vía al Retiro - Antioquia" title="Sendero vía al Retiro - Antioquia" id="wows1_12"/></li>
+		<li><img src="data1/images/subida_trekking_pramo_del_sol_desde_frontino,_antioquia.jpg" alt="Subida trekking Páramo del sol desde Frontino, Antioquia" title="Subida trekking Páramo del sol desde Frontino, Antioquia" id="wows1_13"/></li>
+		<li><a href="http://wowslider.com/vi"><img src="data1/images/trekking_santa_elena.jpg" alt="jquery image gallery" title="Trekking Santa Elena" id="wows1_14"/></a></li>
+		<li><img src="data1/images/va_rocosa_hacia_el_cerro_quitasol_bello__antioquia.jpg" alt="Vía rocosa hacia el cerro Quitasol (Bello - Antioquia)" title="Vía rocosa hacia el cerro Quitasol (Bello - Antioquia)" id="wows1_15"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="Camino con dirección al Salado"><span><img src="data1/tooltips/camino_con_direccin_al_salado.jpg" alt="Camino con dirección al Salado"/>1</span></a>
+		<a href="#" title="Camino prehispánico de los Niquías"><span><img src="data1/tooltips/camino_prehispnico_de_los_niquas.jpg" alt="Camino prehispánico de los Niquías"/>2</span></a>
+		<a href="#" title="Camino vía laguna encantado"><span><img src="data1/tooltips/camino_va_laguna_encantado.jpg" alt="Camino vía laguna encantado"/>3</span></a>
+		<a href="#" title="Cima de trekking en el Páramo del Sol (Urrao, Antioquia)"><span><img src="data1/tooltips/cima_de_trekking_en_el_pramo_del_sol_urrao,_antioquia.jpg" alt="Cima de trekking en el Páramo del Sol (Urrao, Antioquia)"/>4</span></a>
+		<a href="#" title="Cima Morrón vista desde el oeste (Copacabana - Antioquia)"><span><img src="data1/tooltips/cima_morrn_vista_desde_el_oeste_copacabana__antioquia.jpg" alt="Cima Morrón vista desde el oeste (Copacabana - Antioquia)"/>5</span></a>
+		<a href="#" title="Comienzo Senderismo (La Miel, Caldas)"><span><img src="data1/tooltips/comienzo_senderismo_la_miel,_caldas.jpg" alt="Comienzo Senderismo (La Miel, Caldas)"/>6</span></a>
+		<a href="#" title="Deporte y diversión en Envigado, Antioquia"><span><img src="data1/tooltips/deporte_y_diversin_en_envigado,_antioquia.jpg" alt="Deporte y diversión en Envigado, Antioquia"/>7</span></a>
+		<a href="#" title="Llegando a la cascada Los Perdidos (Envigado - Antioquia)"><span><img src="data1/tooltips/llegando_a_la_cascada_los_perdidos_envigado__antioquia.jpg" alt="Llegando a la cascada Los Perdidos (Envigado - Antioquia)"/>8</span></a>
+		<a href="#" title="Logrando la cima en senderismo al cerro Morron (Copacabana, Antioquia)"><span><img src="data1/tooltips/logrando_la_cima_en_senderismo_al_cerro_morron_copacabana,_antioquia.jpg" alt="Logrando la cima en senderismo al cerro Morron (Copacabana, Antioquia)"/>9</span></a>
+		<a href="#" title="Montaña empinada (Rionegro - Antioquia)"><span><img src="data1/tooltips/montaa_empinada_rionegro__antioquia.jpg" alt="Montaña empinada (Rionegro - Antioquia)"/>10</span></a>
+		<a href="#" title="Senderismo al alto de San Miguel (Caldas, Antioquia)"><span><img src="data1/tooltips/senderismo_al_alto_de_san_miguel_caldas,_antioquia.jpg" alt="Senderismo al alto de San Miguel (Caldas, Antioquia)"/>11</span></a>
+		<a href="#" title="Senderismo hacia las cuevas del Higuerón (Caldas, Antioquia)"><span><img src="data1/tooltips/senderismo_hacia_las_cuevas_del_higuern_caldas,_antioquia.jpg" alt="Senderismo hacia las cuevas del Higuerón (Caldas, Antioquia)"/>12</span></a>
+		<a href="#" title="Sendero vía al Retiro - Antioquia"><span><img src="data1/tooltips/sendero_va_al_retiro__antioquia.jpg" alt="Sendero vía al Retiro - Antioquia"/>13</span></a>
+		<a href="#" title="Subida trekking Páramo del sol desde Frontino, Antioquia"><span><img src="data1/tooltips/subida_trekking_pramo_del_sol_desde_frontino,_antioquia.jpg" alt="Subida trekking Páramo del sol desde Frontino, Antioquia"/>14</span></a>
+		<a href="#" title="Trekking Santa Elena"><span><img src="data1/tooltips/trekking_santa_elena.jpg" alt="Trekking Santa Elena"/>15</span></a>
+		<a href="#" title="Vía rocosa hacia el cerro Quitasol (Bello - Antioquia)"><span><img src="data1/tooltips/va_rocosa_hacia_el_cerro_quitasol_bello__antioquia.jpg" alt="Vía rocosa hacia el cerro Quitasol (Bello - Antioquia)"/>16</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com/vi">slider html</a> by WOWSlider.com v7.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+
+<footer>
+		<ul>
+			<li> <a class="menu2" href="../pages/noticias.html">Noticias</a></li>
+			<li> <a class="menu2" href="../pages/especial.html">Especial</a></li>
+			<li> <a  class="menu2" href="../pages/opinion.html">Opinión</a></li>
+			<li> <a class="menu2" href="../pages/video.html">Video</a></li>
+			<li> <a class="menu2" href="#">Galería</a></li>
+		</ul>
+		<a href="#"> <img id="footred" class="footred" src="../images/twitter.png"> </a>
+		<a href="#"><img class="footred" src="../images/facebook.png"></a>
+		<a href="#"><img class="footred" src="../images/google.png"></a>
+		<a href="#"><img class="footred" src="../images/youtube.png"></a>
+
+		<p id="footer"> Calle 20 D Sur # 26 - 47  Tel: 4689621  info@olimpicos.com Rio 2016&trade;<br>
+		Read our <a href="#" class="foot"> Privacy policy </a> and <a href="#" class="foot">Terms of service</a> </p>
+	</footer>
+</body>
+</html>

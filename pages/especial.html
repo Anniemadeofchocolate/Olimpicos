@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html class="htmlpages">
+	<link rel="shortcut icon" href="../favicon.ico" />
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../styles/diagramacion.css">
+	<link rel="stylesheet" type="text/css" href="../styles/textos.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<head>
+	<title> Olimpicos Río 2016</title>
+</head>
+<body class="page" onLoad="goforit()">
+	<header>
+			<a href="../index.html"><img id="rio" src="../images/rio2016.png"></a>
+
+		<script>
+		var dayarray=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday")
+		var montharray=new Array("January","February","March","April","May","June","July","August","September","October","November","December")
+
+		function getthedate(){
+			var mydate=new Date()
+			var year=mydate.getYear()
+			if (year < 1000)
+			year+=1900
+			var day=mydate.getDay()
+			var month=mydate.getMonth()
+			var daym=mydate.getDate()
+			if (daym<10)
+			daym="0"+daym
+			var hours=mydate.getHours()
+			var minutes=mydate.getMinutes()
+			var seconds=mydate.getSeconds()
+			var dn="AM"
+			if (hours>=12)
+			dn="PM"
+			if (hours>12){
+			hours=hours-12
+			}
+			if (hours==0)
+			hours=12
+			if (minutes<=9)
+			minutes="0"+minutes
+			if (seconds<=9)
+			seconds="0"+seconds
+			//change font size here
+			var cdate="<small><font color='ffffff' face='Arial'><b>"+dayarray[day]+", "+montharray[month]+" "+daym+", "+year+" "+hours+":"+minutes+":"+seconds+" "+dn
+			+"</b></font></small>"
+			if (document.all)
+			document.all.clock.innerHTML=cdate
+			else if (document.getElementById)
+			document.getElementById("clock").innerHTML=cdate
+			else
+			document.write(cdate)
+			}
+			if (!document.all&&!document.getElementById)
+			getthedate()
+			function goforit(){
+			if (document.all||document.getElementById)
+			setInterval("getthedate()",1000)
+			}
+
+			</script>
+			<span id="clock"></span>
+		<a href="#"> <img id="bar" href="#"  src="../images/searchbar.png"></a> </header>
+	<nav>
+		<ul>
+			<li> <a class="menu" href="../pages/noticias.html">Noticias</a></li>
+			<li> <a class="sele" class="menu" href="#">Especial</a></li>
+			<li> <a  class="menu" href="../pages/opinion.html">Opinión</a></li>
+			<li> <a class="menu" href="../pages/video.html">Video</a></li>
+			<li> <a class="menu" href="../pages/galeria.html">Galería</a></li>
+		</ul>
+	</nav>
+<h1>ESPECIAL</h1>
+<h2 id="titespecial">LA EXPERIENCIA DE SER VOLUNTARIO EN LOS OLÍMPICOS</h2>
+<section id="especialp">
+<p>Juan Esteban Ramírez es un paisa apasionado por el deporte, a sus 27 años ha recorrido varios lugares de Colombia en bicicleta, rutas como Medellín – Nevado del Ruíz o Medellín – Turbo lo han hecho sentir feliz al llegar a la meta que se impone. Juan llevaba varios años esperando por este momento; los Juegos Olímpicos Río 2016 y en esta oportunidad nos cuenta lo mejor y lo peor de su experiencia como voluntario en este gran evento mundial.</p>
+<br>
+<p> P: Juan, ¿qué fue lo mejor de estar en los juegos olímpicos? <br>
+R: Lo mejor de los juegos olímpicos fue cumplir mi sueño de estar en ellos, toda mi vida he sido deportista y soñé con ese momento en que me aceptaran como voluntario para estos, los juegos más cercanos a los que podía tener acceso. Me presenté para ser voluntario desde hace 5 años, era algo que deseaba con mucho fervor
+Tuve la oportunidad de ver y conocer muchos artistas, escenarios deportivos de primer nivel, una ciudad organizada, de seguridad perfecta para estas fechas, todo el tema de logística, organización, logos, colores olímpicos, la manera en que decoran la ciudad, lo que significa la antorcha olímpica; saber que este símbolo viene inspirado en la antorcha de Grecia. Participar de la organización directamente, ver de cerca el ciclismo, que es el deporte que más amo, compartir con ciclistas tan importantes como Esteban Chaves, Vincenzo Nibali, Chris Froome, fue una experiencia maravillosa. 
+Es un evento que reúne a las 42 disciplinas deportivas, es decir, es el evento más importante que hay en el planeta y yo estuve ahí. Cumplí el sueño de toda mi vida, eso fue lo mejor.</p> <br>
+
+<p>P: ¿y lo peor?<br>
+R: Tristemente los juegos olímpicos están diseñados para turistas y gente que tiene mucho dinero, lo peor de los olímpicos es la exclusión social que se vive en una ciudad como Río durante el tiempo que dura el evento, o en cualquier ciudad en que hagan este tipo de eventos. Esto es para personas que tuvieron la oportunidad de hacer un buen ahorro para participar, como es mi caso, pero una persona de escasos recursos es imposible que pueda asistir porque los precios de las entradas son muy elevados, en términos generales todo es muy exagerado en cuanto a dinero y por ende excluyente en este evento de talla mundial. Estar en un lugar en el que todo gira alrededor del dinero y hay de todo por montones, mucha seguridad, muchos lujos y caminar una cuadra y ver algo completamente diferente; una favela, eso marca. </p>
+</section>
+<section> <article id="fotobueno">
+ 	<img src="../images/fotobueno.jpg"></article>
+ 	<article id="calle"> 
+ 	<img src="../images/calle.jpg"></article>
+</section>
+
+
+<footer>
+		<ul>
+			<li> <a class="menu2" href="../pages/noticias.html">Noticias</a></li>
+			<li> <a class="menu2" href="#">Especial</a></li>
+			<li> <a  class="menu2" href="../pages/opinion.html">Opinión</a></li>
+			<li> <a class="menu2" href="../pages/video.html">Video</a></li>
+			<li> <a class="menu2" href="../pages/galeria.html">Galería</a></li>
+		</ul>
+		<a href="#"> <img id="footred" class="footred" src="../images/twitter.png"> </a>
+		<a href="#"><img class="footred" src="../images/facebook.png"></a>
+		<a href="#"><img class="footred" src="../images/google.png"></a>
+		<a href="#"><img class="footred" src="../images/youtube.png"></a>
+
+		<p id="footer"> Calle 20 D Sur # 26 - 47  Tel: 4689621  info@olimpicos.com Rio 2016&trade;<br>
+		Read our <a href="#" class="foot"> Privacy policy </a> and <a href="#" class="foot">Terms of service</a> </p>
+	</footer>
+</body>
+</html>

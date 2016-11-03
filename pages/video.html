@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html class="htmlpages">
+	<link rel="shortcut icon" href="../favicon.ico" />
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../styles/diagramacion.css">
+	<link rel="stylesheet" type="text/css" href="../styles/textos.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<head>
+	<title> Olimpicos Río 2016</title>
+</head>
+<body class="page"onLoad="goforit()">
+	<header>
+			<a href="../index.html"><img id="rio" src="../images/rio2016.png"></a>
+
+		<script>
+		var dayarray=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday")
+		var montharray=new Array("January","February","March","April","May","June","July","August","September","October","November","December")
+
+		function getthedate(){
+			var mydate=new Date()
+			var year=mydate.getYear()
+			if (year < 1000)
+			year+=1900
+			var day=mydate.getDay()
+			var month=mydate.getMonth()
+			var daym=mydate.getDate()
+			if (daym<10)
+			daym="0"+daym
+			var hours=mydate.getHours()
+			var minutes=mydate.getMinutes()
+			var seconds=mydate.getSeconds()
+			var dn="AM"
+			if (hours>=12)
+			dn="PM"
+			if (hours>12){
+			hours=hours-12
+			}
+			if (hours==0)
+			hours=12
+			if (minutes<=9)
+			minutes="0"+minutes
+			if (seconds<=9)
+			seconds="0"+seconds
+			//change font size here
+			var cdate="<small><font color='ffffff' face='Arial'><b>"+dayarray[day]+", "+montharray[month]+" "+daym+", "+year+" "+hours+":"+minutes+":"+seconds+" "+dn
+			+"</b></font></small>"
+			if (document.all)
+			document.all.clock.innerHTML=cdate
+			else if (document.getElementById)
+			document.getElementById("clock").innerHTML=cdate
+			else
+			document.write(cdate)
+			}
+			if (!document.all&&!document.getElementById)
+			getthedate()
+			function goforit(){
+			if (document.all||document.getElementById)
+			setInterval("getthedate()",1000)
+			}
+
+			</script>
+			<span id="clock"></span>
+		<a href="#"> <img id="bar" href="#"  src="../images/searchbar.png"></a> </header>
+	<nav>
+		<ul>
+			<li> <a class="menu" href="../pages/noticias.html">Noticias</a></li>
+			<li> <a class="menu" href="../pages/especial.html">Especial</a></li>
+			<li> <a  class="menu" href="../pages/opinion.html">Opinión</a></li>
+			<li> <a class="sele" class="menu" href="#">Video</a></li>
+			<li> <a class="menu" href="../pages/galeria.html">Galería</a></li>
+		</ul>
+	</nav>
+<h1>VIDEO</h1>
+<h2 class="titulos">TODOS DEBERÍAMOS APRENDER DE DAVID KATOATAU</h2>
+<iframe id="videodavid" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FIPTBT%2Fvideos%2F1494726557211052%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+<h3 id="pievideo">David nos hace vivir un momento muy emotivo al tomarse de la mejor manera (bailando) el no haber podido levantar las pesas en su competencia por la medalla olímpica.</h3>
+
+
+<footer>
+		<ul>
+			<li> <a class="menu2" href="../pages/noticias.html">Noticias</a></li>
+			<li> <a class="menu2" href="../pages/especial.html">Especial</a></li>
+			<li> <a  class="menu2" href="../pages/opinion.html">Opinión</a></li>
+			<li> <a class="menu2" href="#">Video</a></li>
+			<li> <a class="menu2" href="../pages/galeria.html">Galería</a></li>
+		</ul>
+		<a href="#"> <img id="footred" class="footred" src="../images/twitter.png"> </a>
+		<a href="#"><img class="footred" src="../images/facebook.png"></a>
+		<a href="#"><img class="footred" src="../images/google.png"></a>
+		<a href="#"><img class="footred" src="../images/youtube.png"></a>
+
+		<p id="footer"> Calle 20 D Sur # 26 - 47  Tel: 4689621  info@olimpicos.com Rio 2016&trade;<br>
+		Read our <a href="#" class="foot"> Privacy policy </a> and <a href="#" class="foot">Terms of service</a> </p>
+	</footer>
+</body>
+</html>
