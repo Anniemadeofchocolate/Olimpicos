@@ -460,7 +460,7 @@ aside{width: 100%;
 
 #videos
 	{width: 100%;
-		height: 316px;
+		height: 340px;
 		margin: 0 auto;
 				text-align: center;
 				border-bottom:#bfbfbf solid 4px;}
@@ -482,7 +482,7 @@ aside{width: 100%;
 footer
 	{background: url(../images/footer3.jpg);
 	background-repeat: no-repeat;
-	height: 130px;
+	height: 140px;
 	padding-top: 20px;
 	width: 100%;
 	float: left;
